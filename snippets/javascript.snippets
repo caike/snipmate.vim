@@ -1,3 +1,30 @@
+# Express
+snippet expr
+	var express = require('express');
+	var app = express();
+
+	${1}
+
+	app.listen(3000);
+# Express
+snippet appget
+	app.get('${1}', function(request, response){
+	  ${2}
+	});
+# Express POST
+snippet apppost
+	app.post('${1}', function(request, response){
+	  ${2}
+	});
+# Mocha describe block
+snippet descf
+	describe('${1}', function(){
+
+	  it('${2}', function(done){
+	    ${3}
+	  });
+	});
+
 # Prototype
 snippet proto
 	${1:class_name}.prototype.${2:method_name} =
